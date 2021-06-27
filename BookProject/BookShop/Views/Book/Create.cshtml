@@ -1,0 +1,28 @@
+﻿@model BookViewModel
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <form asp-action="Create" method="post">
+                    <div class="form-group">
+                        <label asp-for="Name" class="col-form-label">Kitabın Adı</label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Author" class="col-form-label">Yazarı</label>
+                        <input asp-for="Author" class="form-control" />
+                        <span asp-validation-for="Author" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Year" class="col-form-label">Yayım Tarihi</label>
+                        <input asp-for="Year" class="form-control" />
+                        <span asp-validation-for="Year" class="text-danger"></span>
+                    </div>
+                    
+
+                    <input type="submit"  value="Kaydet" class="btn btn-primary" />
+                </form>
+            </div>
+        </div>
+    </div>
